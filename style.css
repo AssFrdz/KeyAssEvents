@@ -1,0 +1,629 @@
+@font-face{
+font-family: "LM roman 12"; /* Nom qu'on donne à la police*/
+    src: url("fonts/lmroman12-regular.otf");/*dossier et nom de la police*/
+}
+
+@font-face{
+    font-family: "Spirax Regular"; /* Nom qu'on donne à la police*/
+        src: url("fonts/Spirax-Regular.ttf");/*dossier et nom de la police*/
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Spirax Regular" ;
+    
+}
+body{
+    position: relative;
+    background-color: rgb(255, 244, 247);
+}
+
+/* Style du menu de navigation */
+
+#logo{
+    max-width: 9rem;
+}
+
+.iconhead{
+    width: 3rem;
+    height: 3rem;
+}
+
+.btnheader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+header {
+    position: absolute;
+    top:0;
+    z-index: 99;
+    width: 100%;
+    height: 8em;
+    background-image: url("img/background/aquarose.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.navbar{
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+
+.navbar li {
+    list-style-type: none;
+    height: auto;
+    width: 100%;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.navbar a { 
+    display: block;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px 30px;
+    padding: 20px;
+
+}
+
+nav a:hover{
+    color: rgb(203, 170, 117);
+    border-bottom: 2px solid rgb(255, 215, 149);
+}
+
+.navbar li ul {
+    display: none;
+    margin :0;
+    padding: 0;
+}
+
+.navbar li:hover ul{
+    display:block;
+}
+.navbar li ul li{
+    background-color: white;
+}
+
+.navbar li ul li a {
+    border-left:1px solid rgb(255, 215, 149);
+    border-right: 1px solid rgb(255, 215, 149);
+    color: black;
+    font-weight: 200;
+    margin:0;
+    padding:2px 2px;
+}
+
+.navbar li ul li a:hover{
+    color:rgb(203, 170, 117);
+
+}
+
+/* Fin du Style du menu de navigation */
+
+/* Style du bas de page */
+
+#footer{
+    position: absolute;
+    top: 1300px;
+    width: 100%;
+    height: 9em;   
+    background-image: url("img/background/aquarose.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(255, 215, 149);
+}
+
+#footer div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+    margin: 0 10px;
+
+
+}
+
+#footer .rsx {
+    display:flex;
+    flex-direction: column;
+}
+
+#footer .rsx a, footer a{
+    text-decoration:none;
+    color:black;
+}
+
+#footer span, #footer span i{
+    padding: 2px 2px;
+}
+
+/* Fin du Style du bas de page */
+
+
+/* Box wedding */
+section{
+    padding: 2rem 9%;
+}
+    
+
+.Accueil{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(img/pexels-camera-treasure-12165510.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Accueil .content h2{
+    font-size: 4rem;
+    color:aliceblue
+}
+
+.Accueil .content span{
+    font-size: 1rem;
+    color :aliceblue
+
+}
+
+.Accueil .content p{
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background:rgb(255, 182, 255);
+}
+
+/* Fin box wedding */
+
+
+/* Début Ensemble des box présentatives onglets prcpal */
+
+.contenu{
+    position: relative;
+    top: 120px;
+    height: 100%;
+
+
+}
+
+.contenu h1{
+    font-size: 50px;
+    text-shadow: 5px 3px rgb(255, 215, 149);
+    font-weight: 100;
+    display: inline;
+    position: relative;
+    top: 0px;
+    border-bottom: 2px solid rgb(255, 215, 149);
+    margin-bottom: 5px;
+}
+
+.esbl { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.esbl h2, .esbl .btn{
+    font-size: 3rem;
+    color:aliceblue;
+    display: inline;
+    margin: 20px;
+    position: relative;
+    top: 250px;
+}
+
+.esbl .box_presents{
+    font-size: 1rem;
+    color :aliceblue;
+    width: 400px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 20px 20px; 
+    background: transparent;
+}
+
+.esbl .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding:0.7rem 1rem ;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background:rgb(255, 182, 255);
+}
+
+/* pour les presta */
+
+
+.esbl .box_presents.traiteur {
+    background:url(img/traiteur/traiteur\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.esbl .box_presents.deco {
+    background:url(img/deco/deco_mariage_dune_vie1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.esbl .box_presents.makeup {
+    background:url(img/makeup/mkp\ \(4\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.esbl .box_presents.henna {
+    background:url(img/henna/hen\ \(10\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Location */
+
+.esbl .box_presents.robe {
+    background:url(img/robe/robe\ \(6\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.esbl .box_presents.salle {
+    background:url(img/salle/salle\ \(10\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.esbl .box_presents.voiture {
+    background:url(img/voiture/voiture\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Photographie */
+
+.esbl .box_presents.photo {
+    background:url(img/photos/photos\ \(16\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.esbl .box_presents.photo h2, .esbl .box_presents.photo .btn{
+    position: relative;
+    top: 220px;
+}
+
+
+
+.esbl .box_presents.video {
+    background:url(img/photos/photos\ \(6\).jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Fin Ensemble des box présentatives onglets prcpal */
+
+/* Début box articles */
+
+.art {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.art .topart {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.art .select{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: white;
+    color: black;
+    padding: 2px 1px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.art .boite_art .img_art {
+    width: 350px;
+    height: 300px;
+    border: 1px solid rgb(203, 170, 117);
+
+}
+
+.art .btn.panier{
+    position: relative;
+    left: 70px;
+}
+
+
+.boite_art{
+    width: 350px;
+    height: 500px;
+    padding: 10px 10px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 10px;
+    background-color: white;
+}
+
+.topart h3{
+    border-bottom: 1px solid rgb(203, 170, 117);
+}
+.topart .prix{
+    font-style: italic;
+}
+
+/*Images traiteur*/
+
+.art .boite_art .img_art.traiteur1{
+    background:url(img/traiteur/traiteur\ \(2\).jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.art .boite_art .img_art.traiteur2{
+    background:url(img/traiteur/traiteur\ \(3\).jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/*Images deco*/
+.art .boite_art .img_art.deco1{
+    background:url(img/deco/deco_mariage_dune_vie6.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.art .boite_art .img_art.deco2{
+    background:url(img/deco/inti_event5.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.art .boite_art .img_art.deco3{
+    background:url(img/deco/mariageeventsoff5.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.art .boite_art .img_art.deco4{
+    background:url(img/deco/prettywedding2.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/*Images mkp*/
+
+.art .boite_art .img_art.mk1{
+    background:url(img/makeup/mkp\ \(10\).jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.art .boite_art .img_art.mk2{
+    background:url(img/makeup/mkp\ \(9\).jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.art .boite_art .img_art.mk3{
+    background:url(img/makeup/mkp\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.mk4{
+    background:url(img/makeup/mkp\ \(3\).jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/*Images henné*/
+
+.art .boite_art .img_art.henna1{
+    background:url(img/henna/hen\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.henna2{
+    background:url(img/henna/hen\ \(2\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.art .boite_art .img_art.henna3{
+    background:url(img/henna/hen\ \(12\).jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.art .boite_art .img_art.henna4{
+    background:url(img/henna/hen\ \(13\).jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/*Images robes*/
+
+.art .boite_art .img_art.robe1{
+    background:url(img/robe/robe\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.robe2{
+    background:url(img/robe/robe\ \(2\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.robe3{
+    background:url(img/robe/robe\ \(9\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.art .boite_art .img_art.robe4{
+    background:url(img/robe/robe\ \(7\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Images salle*/
+.art .boite_art .img_art.salle1{
+    background:url(img/salle/salle\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.salle2{
+    background:url(img/salle/salle\ \(3\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.salle3{
+    background:url(img/salle/salle\ \(5\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.salle4{
+    background:url(img/salle/salle\ \(6\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Images voiture*/
+.art .boite_art .img_art.voiture1{
+    background:url(img/voiture/voiture\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.voiture2{
+    background:url(img/voiture/voiture\ \(2\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Images photographe*/
+.art .boite_art .img_art.photo1{
+    background:url(img/photos/photos\ \(10\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.photo2{
+    background:url(img/photos/photos\ \(5\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.photo3{
+    background:url(img/photos/photos\ \(8\).jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.art .boite_art .img_art.photo4{
+    background:url(img/photos/photos\ \(14\).jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+/*Formulaire de connexion*/
+
+.topart.connexion{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.boite_art.connexion{
+    height: 870px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.connexion.champs {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px 20px;
+
+ 
+}
+
+.connexion input{
+    padding:20px 30%;
+    margin: 20px 20px;
+    font-size: 30px;
+
+}
+
+/*Panier */
+
+.boite_art.panier{
+    width: 100%;
+
+}
